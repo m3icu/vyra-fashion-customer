@@ -1,3 +1,4 @@
+import theme from "../../theme";
 export default function Section({
   as: Component = "section",
   children,

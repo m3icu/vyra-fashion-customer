@@ -15,6 +15,6 @@ const effects = Object.freeze({
 
   focusRing: "0 0 0 3px rgba(111,78,55,.18)"
 
-}),
+});
 
 export default effects;

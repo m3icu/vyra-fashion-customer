@@ -1,5 +1,5 @@
-import Section from "../../layout/Section";
-import Container from "../../layout/Container";
+import Section from "../../common/Section";
+import Container from "../../common/Container";
 
 import HeroContent from "./HeroContent";
 import HeroImage from "./HeroImage";
@@ -21,3 +21,7 @@ export default function Hero() {
     </Section>
   );
 }
+/**
+ * Visitor Journey
+ * Curiosity → Emotion
+ */

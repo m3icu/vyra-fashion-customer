@@ -1,5 +1,5 @@
-import Section from "../../layout/Section";
-import Container from "../../layout/Container";
+import Section from "../common/Section";
+import Container from "../common/Container";
 
 import CollectionCard from "./CollectionCard";
 import collections from "./collections";
@@ -47,3 +47,7 @@ export default function FeaturedCollections() {
     </Section>
   );
 }
+/**
+ * Visitor Journey
+ * Discover → Consider
+ */

@@ -1,3 +1,5 @@
+import Button from "../../ui/Button";
+
 export default function HeroContent() {
   return (
     <div className="space-y-6">
@@ -20,9 +22,12 @@ export default function HeroContent() {
         and every story in between.
       </p>
 
-      <button className="rounded-full border border-stone-800 px-8 py-3 transition hover:bg-stone-800 hover:text-white">
+      <Button
+        variant="secondary"
+        size="lg"
+      >
         Explore Collection
-      </button>
+      </Button>
 
     </div>
   );

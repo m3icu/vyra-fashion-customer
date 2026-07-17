@@ -1,5 +1,5 @@
-import Container from "../layout/Container";
-import { theme } from "../../theme";
+import Container from "../../common/Container";
+import { theme } from "../../../theme/theme";
 
 export default function Footer() {
   return (
