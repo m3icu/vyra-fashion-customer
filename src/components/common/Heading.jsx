@@ -36,7 +36,7 @@ export default function Heading({
 
   const sizes = {
     hero: {
-      fontSize: theme.typography.fontSize["6xl"],
+      fontSize: theme.typography.fontSize["5xl"],
       lineHeight: theme.typography.lineHeight.tight,
     },
 
@@ -102,11 +102,11 @@ export default function Heading({
 
             fontFamily: theme.typography.fontFamily,
 
-            fontSize: theme.typography.fontSize["4xl"],
+            fontSize: sizeStyles.fontSize,
 
             fontWeight: theme.typography.fontWeight.light,
 
-            lineHeight: theme.typography.lineHeight.tight,
+            lineHeight: sizeStyles.lineHeight,
 
             color: theme.colors.text,
           }}
