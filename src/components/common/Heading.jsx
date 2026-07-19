@@ -102,7 +102,10 @@ export default function Heading({
 
             fontFamily: theme.typography.fontFamily,
 
-            fontSize: sizeStyles.fontSize,
+            fontSize:
+              size === "hero"
+                ? "var(--font-size-hero)"
+                : sizeStyles.fontSize,
 
             fontWeight: theme.typography.fontWeight.light,
 

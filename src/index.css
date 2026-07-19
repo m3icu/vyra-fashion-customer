@@ -14,6 +14,20 @@
   -webkit-font-smoothing: antialiased;
 
   -moz-osx-font-smoothing: grayscale;
+  
+  --font-size-hero: 36px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-hero: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-hero: 48px;
+  }
 }
 
 * {

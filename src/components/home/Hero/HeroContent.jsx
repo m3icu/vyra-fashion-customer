@@ -1,5 +1,12 @@
 import Heading from "../../common/Heading";
 import Button from "../../ui/Button";
+import {
+  getExperience
+} from "../../../content/experience";
+
+
+const scene =
+getExperience("hero");
 
 export default function HeroContent() {
   return (

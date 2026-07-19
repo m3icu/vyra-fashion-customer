@@ -31,6 +31,7 @@ import opacity from "./opacity";
 import layout from "./layout";
 import button from "./button";
 import formControl from "./formControl";
+import mood from "./mood";
 
 const theme = Object.freeze ({ 
 /**
@@ -47,6 +48,7 @@ const theme = Object.freeze ({
   transition,
   opacity,
   duration,
+  mood,
 
 /**
  *-----------------------------------------

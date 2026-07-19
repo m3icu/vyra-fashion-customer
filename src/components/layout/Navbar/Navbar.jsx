@@ -50,11 +50,16 @@ export default function Navbar() {
 
         <NavLogo />
 
-        <NavMenu />
+        <div className="hidden md:block">
+          <NavMenu />
+        </div>
 
-        <div className="flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-6">
           <NavSearch />
           <NavActions />
+        </div>
+
+        <div className="md:hidden">
           <MobileMenu />
         </div>
 

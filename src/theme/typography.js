@@ -29,6 +29,14 @@ const typography = Object.freeze({
     normal: 1.5,
     relaxed: 1.7,
   },
+
+  responsive: {
+    hero: {
+      mobile: "36px",
+      tablet: "42px",
+      desktop: "48px",
+    },
+  },
 });
 
 export default typography;

@@ -5,6 +5,27 @@ Version 1.0
 
 # Vision
 
+--------------------------------------------------------
+
+VYRA is not designed
+to impress visitors.
+
+VYRA is designed
+to inspire imagination.
+
+When people can imagine
+their own story,
+
+they no longer see
+a product.
+
+They see
+a possibility.
+
+Build with Heart.
+
+--------------------------------------------------------
+
 VYRA Fashion is not just an online fashion store.
 
 VYRA is a place where every collection becomes part of someone's story.
@@ -522,3 +543,33 @@ Treat every detail with care.
 Welcome to VYRA.
 
 Build with heart.
+
+────────────────────────────────────────
+
+MEMORY BEFORE MARKETING
+
+People rarely remember
+product specifications.
+
+They remember
+how something
+made them feel.
+
+Before presenting
+a product,
+
+awaken a memory.
+
+Before asking
+for a purchase,
+
+invite imagination.
+
+The strongest brands
+don't interrupt memories.
+
+They become part of them.
+
+Build with Heart.
+
+────────────────────────────────────────

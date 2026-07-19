@@ -10,7 +10,7 @@
  * --------------------------------------------------------
  */
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { theme } from "../../../theme";
 
 const menus = [
@@ -40,27 +40,50 @@ export default function NavMenu() {
       className="hidden md:flex"
     >
       {menus.map((menu) => (
-        <Link
-          key={menu.to}
-          to={menu.to}
+      <NavLink
+        key={menu.to}
+        to={menu.to}
+        className={({ isActive }) => `
+          relative
+          py-2
+          no-underline
+          transition-colors
+          duration-300
+          ease-out
+
+          after:absolute
+          after:bottom-0
+          after:left-1/2
+          after:h-px
+          after:-translate-x-1/2
+          after:bg-[var(--nav-underline)]
+          after:transition-all
+          after:duration-300
+          after:ease-out
+
+          ${
+            isActive
+              ? "text-[var(--nav-hover)] after:w-full"
+               : "after:w-0 hover:text-[var(--nav-hover)] hover:after:w-full"
+          }
+        `}
           style={{
+            "--nav-underline": theme.colors.primary,
+            "--nav-hover": theme.colors.primary,
+
             color: theme.colors.text,
-            textDecoration: "none",
+
             fontSize: theme.typography.fontSize.sm,
-            fontWeight: theme.typography.fontWeight.sm,
+
+            fontWeight: theme.typography.fontWeight.medium,
+
             fontFamily: theme.typography.fontFamily,
+
             letterSpacing: "0.04em",
-            transition: "all .25s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.color = theme.colors.primary;
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.color = theme.colors.text;
           }}
         >
           {menu.label}
-        </Link>
+        </NavLink>
       ))}
     </nav>
   );
