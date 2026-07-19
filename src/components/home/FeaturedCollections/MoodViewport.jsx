@@ -30,11 +30,11 @@ export default function MoodViewport({ preset }) {
           h-full
           w-full
           transition-transform
-          duration-500
           ease-out
           group-hover:scale-[1.02]
         "
         style={{
+          transitionDuration: `${preset.motion.duration}ms`,
           background: `linear-gradient(
             135deg,
             ${preset.gradient[0]},
@@ -43,6 +43,7 @@ export default function MoodViewport({ preset }) {
           )`,
         }}
       >
+      
         {/* Soft Accent */}
         <div
           className="
@@ -58,6 +59,78 @@ export default function MoodViewport({ preset }) {
             opacity: 0.08,
           }}
         />
+
+        <div
+          className="
+            absolute
+            inset-0
+            pointer-events-none
+          "
+          style={{
+            background: `
+              radial-gradient(
+                circle at ${preset.glow.x} ${preset.glow.y},
+                ${preset.glow.color},
+                transparent 65%
+              )`,
+            opacity: preset.glow.opacity,
+            filter: `blur(${preset.glow.blur}px)`,
+           }}
+         />
+
+         <div
+           className="
+             absolute
+             inset-0
+             pointer-events-none
+           "
+           style={{
+             background: preset.overlay,
+           }}
+         />
+
+         <div
+           className="
+             absolute
+             inset-0
+             pointer-events-none
+           "
+           style={{
+             opacity: 0.04,
+             backgroundImage: `
+               linear-gradient(
+                 rgba(255,255,255,.5) 1px,
+                 transparent 1px
+               )
+             `,
+             backgroundSize: "4px 4px",
+           }}
+         />
+
+         <div
+           className="
+             absolute
+             left-5
+             bottom-5
+           "
+         >
+
+             <span
+               style={{
+                 color:"#fff",
+                 fontSize:"12px",
+                 letterSpacing:"0.12em",
+                 textTransform:"uppercase",
+                 opacity:.8
+               }}
+             >
+
+               {preset.label}
+
+             </span>
+
+        </div>
+
 
         {/* Future Photography */}
 
