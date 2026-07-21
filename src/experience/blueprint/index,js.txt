@@ -1,0 +1,32 @@
+/**
+ * --------------------------------------------------------
+ * VYRA Fashion
+ * Experience Blueprint Gateway
+ *
+ * Build with Heart.
+ * --------------------------------------------------------
+ */
+
+
+export {
+  default as heroBlueprint
+}
+from "./homepage/hero";
+
+
+export {
+  default as collectionsBlueprint
+}
+from "./homepage/collections";
+
+
+export {
+  default as brandStoryBlueprint
+}
+from "./homepage/brandStory";
+
+
+export {
+  default as featuredProductsBlueprint
+}
+from "./homepage/featuredProducts";

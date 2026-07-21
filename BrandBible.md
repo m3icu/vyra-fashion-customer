@@ -2,7 +2,30 @@
 Version 1.0
 
 ---
+VYRA is an editorial shopping experience.
 
+It borrows the calm,
+clarity,
+rhythm,
+and storytelling
+of great fashion editorials.
+
+It combines them
+with the simplicity,
+speed,
+and usability
+of modern ecommerce.
+
+Visitors should feel inspired
+before they feel persuaded.
+
+Products support stories.
+
+Stories create confidence.
+
+Shopping remains effortless.
+
+Build with Heart.
 # Vision
 
 --------------------------------------------------------

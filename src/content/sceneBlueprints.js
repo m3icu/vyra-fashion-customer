@@ -74,7 +74,7 @@ const sceneBlueprints = Object.freeze({
     scene:
       "Finding a piece that belongs to your own story.",
 
-    trigger:
+    memoryTrigger:
       "celebration",
   },
 
