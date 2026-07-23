@@ -1,0 +1,19 @@
+const primitive = Object.freeze({
+
+    LIGHT: "LIGHT",
+
+    DEPTH: "DEPTH",
+
+    SPACE: "SPACE",
+
+    RHYTHM: "RHYTHM",
+
+    BALANCE: "BALANCE",
+
+    FOCUS: "FOCUS",
+
+    CONTRAST: "CONTRAST",
+
+});
+
+export default primitive;

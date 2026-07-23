@@ -1,107 +1,156 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
+ * VYRA Experience OS
  * Experience Engine
  *
- * Narrative Patterns
+ * Narrative Decision Table
+ *
+ * Maps emotions into
+ * runtime narrative behavior.
+ *
+ * Narrative shapes meaning,
+ * not content.
  *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
+import { emotion } from "../language";
+
 const narrative = Object.freeze({
 
-  wonder: {
+    [emotion.WONDER]: {
 
-    sequence: [
+        hierarchy:
+            "story-first",
 
-      "imagine",
+        emphasis:
+            "emotion",
 
-      "aspire",
+        voice:
+            "aspirational",
 
-      "discover",
+        density:
+            "light",
 
-    ],
+        rhythm:
+            "slow",
 
-  },
+        feeling:
+            "possibility",
 
+    },
 
-  curiosity: {
+    [emotion.CURIOSITY]: {
 
-    sequence: [
+        hierarchy:
+            "discovery-first",
 
-      "notice",
+        emphasis:
+            "exploration",
 
-      "explore",
+        voice:
+            "editorial",
 
-      "learn",
+        density:
+            "balanced",
 
-    ],
+        rhythm:
+            "flowing",
 
-  },
+        feeling:
+            "discovery",
 
+    },
 
-  connection: {
+    [emotion.CONNECTION]: {
 
-    sequence: [
+        hierarchy:
+            "meaning-first",
 
-      "human",
+        emphasis:
+            "human",
 
-      "story",
+        voice:
+            "warm",
 
-      "meaning",
+        density:
+            "reflective",
 
-    ],
+        rhythm:
+            "gentle",
 
-  },
+        feeling:
+            "belonging",
 
+    },
 
-  confidence: {
+    [emotion.CONFIDENCE]: {
 
-    sequence: [
+        hierarchy:
+            "clarity-first",
 
-      "understand",
+        emphasis:
+            "decision",
 
-      "visualize",
+        voice:
+            "assured",
 
-      "choose",
+        density:
+            "balanced",
 
-    ],
+        rhythm:
+            "steady",
 
-  },
+        feeling:
+            "certainty",
 
+    },
 
-  inspiration: {
+    [emotion.INSPIRATION]: {
 
-    sequence: [
+        hierarchy:
+            "vision-first",
 
-      "discover",
+        emphasis:
+            "possibility",
 
-      "express",
+        voice:
+            "uplifting",
 
-      "create",
+        density:
+            "airy",
 
-    ],
+        rhythm:
+            "expansive",
 
-  },
+        feeling:
+            "imagination",
 
+    },
 
-  trust: {
+    [emotion.TRUST]: {
 
-    sequence: [
+        hierarchy:
+            "proof-first",
 
-      "proof",
+        emphasis:
+            "credibility",
 
-      "clarity",
+        voice:
+            "honest",
 
-      "relationship",
+        density:
+            "comfortable",
 
-    ],
+        rhythm:
+            "consistent",
 
-  },
+        feeling:
+            "security",
 
+    },
 
 });
-
 
 export default narrative;

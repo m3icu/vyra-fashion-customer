@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
- * Experience Blueprint
+ * VYRA Experience OS
+ * Homepage Blueprint
  *
  * Scene:
  * Homepage Hero
@@ -9,71 +9,114 @@
  * Mission:
  * Create the first emotional connection.
  *
+ * The Hero welcomes visitors into
+ * the VYRA world through aspiration,
+ * warmth, and quiet confidence.
+ *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
+import {
+    emotion,
+    purpose,
+    pace,
+    profile,
+    mood,
+    tone,
+    energy,
+    trust,
+    attention,
+    sensory
+} from "../../language";
+
 const hero = Object.freeze({
 
-  id: "homepage.hero",
+    id: "homepage.hero",
 
-  emotion: "wonder",
+    mission:
+        "Create the first emotional connection.",
 
-  purpose:
-    "Create aspiration and invite visitors into the VYRA world.",
+    profile:
+        profile.GENTLE_LUXURY,
 
+    language: {
 
-  readingPace: "slow",
+        emotion:
+            emotion.WONDER,
 
+        mood:
+            mood.SOFT_MORNING,
 
-  narrative: {
+        tone:
+            tone.WARM,
 
-    role: "opening",
+        purpose:
+            purpose.DISCOVER,
 
-    message:
-      "Fashion accompanies meaningful moments.",
+        energy:
+            energy.LOW,
 
-  },
+        pace:
+            pace.SLOW,
 
+        trust:
+            trust.GROWING,
 
-  editorial: {
+        attention:
+            attention.FIRST_IMPRESSION,
 
-    weight: "high",
+        sensory:
+            sensory.SOFT,
 
-    photography:
-      "immersive",
+    },
 
-    typography:
-      "display",
+    narrative: {
 
-    whitespace:
-      "airy",
+        role:
+            "opening",
 
-  },
+        message:
+            "Fashion accompanies meaningful moments.",
 
+    },
 
-  interaction: {
+    editorial: {
 
-    motion:
-      "gentle",
+        weight:
+            "high",
 
-    scroll:
-      "continue-story",
+        photography:
+            "immersive",
 
-  },
+        typography:
+            "display",
 
+        whitespace:
+            "airy",
 
-  commerce: {
+    },
 
-    priority:
-      "secondary",
+    interaction: {
 
-    action:
-      "discover",
+        primaryAction:
+            "discover",
 
-  },
+        scrollBehavior:
+            "continue-story",
+
+    },
+
+    commerce: {
+
+        priority:
+            "secondary",
+
+        objective:
+            "build-curiosity",
+
+    },
 
 });
-
 
 export default hero;

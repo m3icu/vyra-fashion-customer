@@ -1,77 +1,65 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
+ * VYRA Experience OS
  * Experience Engine
  *
  * The brain of Experience OS.
  *
- * Translates blueprint intention
- * into experience guidance.
+ * Interprets resolved experience
+ * into runtime decisions.
+ *
+ * Engine decides.
+ * Translator visualizes.
  *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
-import readingPace from "./readingPace";
-import narrative from "./narrative";
 import motion from "./motion";
-import experienceRegistry from "../registry/registry";
+import narrative from "./narrative";
+import readingPace from "./readingPace";
 
-function createExperience(blueprint) {
-  if (!blueprint) {
-    throw new Error(
-      "Experience blueprint is required."
-    );
-  }
-  const {
-    emotion,
-    readingPace: pace,
-    narrative: story,
-    interaction,
-    editorial,
-    commerce,
-  } = blueprint;
+function createExperience(experience) {
 
-  return Object.freeze({
-    id:
-      blueprint.id,
-    emotion,
-    purpose:
-      blueprint.purpose,
+    if (!experience) {
 
-    pace:
-      readingPace[pace],
+        throw new Error(
+            "Resolved experience is required."
+        );
 
-    narrative:
-      narrative[emotion],
+    }
 
-    motion:
-      motion[emotion],
+    const { language } = experience;
 
-    editorial,
+    const decisions = Object.freeze({
 
-    interaction,
+        motion:
+            motion[
+                language.emotion
+            ],
 
-    commerce,
-  });
-}
+        narrative:
+            narrative[
+                language.emotion
+            ],
 
-function getExperience(id) {
-  const blueprint =
-    experienceRegistry[id];
+        reading:
+            readingPace[
+                language.pace
+            ],
 
-  if (!blueprint) {
-    throw new Error(
-      `Experience "${id}" not found.`
-    );
-  }
+    });
 
-  return createExperience(
-    blueprint
-  );
+    return Object.freeze({
+
+        ...experience,
+
+        decisions,
+
+    });
+
 }
 
 export {
-  createExperience,
-  getExperience,
+    createExperience,
 };

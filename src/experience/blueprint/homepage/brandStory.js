@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
- * Experience Blueprint
+ * VYRA Experience OS
+ * Homepage Blueprint
  *
  * Scene:
  * Homepage Brand Story
@@ -10,96 +10,136 @@
  * Create emotional connection
  * between people and the brand.
  *
+ * Every great brand begins with
+ * a meaningful story.
+ *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
+import {
+    emotion,
+    mood,
+    tone,
+    purpose,
+    energy,
+    pace,
+    trust,
+    attention,
+    sensory,
+    profile,
+} from "../../language";
+
 const brandStory = Object.freeze({
 
-  id: "homepage.brandStory",
+    id: "homepage.brandStory",
 
+    mission:
+        "Create emotional connection between people and the brand.",
 
-  emotion:
-    "connection",
+    profile:
+        profile.MODERN_CRAFT,
 
+    language: {
 
-  purpose:
-    "Build trust by revealing the human meaning behind VYRA.",
+        emotion:
+            emotion.CONNECTION,
 
+        mood:
+            mood.WARM_ATELIER,
 
-  readingPace:
-    "slow",
+        tone:
+            tone.AUTHENTIC,
 
+        purpose:
+            purpose.CONNECT,
 
-  narrative: {
+        energy:
+            energy.LOW,
 
-    role:
-      "emotional-bridge",
+        pace:
+            pace.SLOW,
 
-    structure: [
+        trust:
+            trust.GROWING,
 
-      "human",
+        attention:
+            attention.STORY,
 
-      "belief",
+        sensory:
+            sensory.WARM,
 
-      "meaning",
+    },
 
-    ],
+    narrative: {
 
-    message:
-      "Fashion accompanies meaningful moments.",
+        role:
+            "emotional-bridge",
 
-  },
+        structure: [
 
+            "human",
 
-  editorial: {
+            "belief",
 
-    weight:
-      "very-high",
+            "meaning",
 
-    photography:
-      "human-centered",
+        ],
 
-    typography:
-      "reflective",
+        message:
+            "Fashion accompanies meaningful moments.",
 
-    whitespace:
-      "generous",
+    },
 
-  },
+    editorial: {
 
+        weight:
+            "very-high",
 
-  interaction: {
+        photography:
+            "human-centered",
 
-    motion:
-      "gentle-reveal",
+        typography:
+            "reflective",
 
-    reading:
-      "pause-and-reflect",
+        whitespace:
+            "generous",
 
-  },
+    },
 
+    interaction: {
 
-  memory: {
+        primaryAction:
+            "continue-reading",
 
-    enabled:
-      true,
+        readingBehavior:
+            "pause-and-reflect",
 
-    focus:
-      "personal moments",
+    },
 
-  },
+    memory: {
 
+        enabled:
+            true,
 
-  commerce: {
+        trigger:
+            "personal moments",
 
-    priority:
-      "none",
+        objective:
+            "Create emotional recall through meaningful storytelling.",
 
-  },
+    },
 
+    commerce: {
+
+        priority:
+            "none",
+
+        objective:
+            "Strengthen brand relationship before selling.",
+
+    },
 
 });
-
 
 export default brandStory;

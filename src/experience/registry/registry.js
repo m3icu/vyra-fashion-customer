@@ -1,24 +1,55 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
- *
+ * VYRA Experience OS
  * Experience Registry
  *
- * Single source of experience lookup.
+ * Central registry for all
+ * experience blueprints.
  *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
-import homepageExperiences
-from "./homepage";
+import homepage from "../blueprints/homepage";
 
+const registry = Object.freeze({
 
-const experienceRegistry = Object.freeze({
-
-  ...homepageExperiences,
+    ...homepage,
 
 });
 
+function hasExperience(id) {
 
-export default experienceRegistry;
+    return id in registry;
+
+}
+
+function getBlueprint(id) {
+
+    return registry[id] ?? null;
+
+}
+
+function getAllBlueprints() {
+
+    return Object.values(registry);
+
+}
+
+function getIds() {
+
+    return Object.keys(registry);
+
+}
+
+export {
+
+    getBlueprint,
+
+    getAllBlueprints,
+
+    getIds,
+
+    hasExperience,
+
+};

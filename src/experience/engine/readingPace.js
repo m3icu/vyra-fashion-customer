@@ -1,71 +1,81 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
+ * VYRA Experience OS
  * Experience Engine
  *
- * Reading Pace Translator
+ * Reading Pace Decision Table
  *
- * Converts emotional rhythm
- * into experience behavior.
+ * Maps reading pace into
+ * runtime reading behavior.
+ *
+ * Reading pace shapes rhythm,
+ * not typography.
  *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
+import { pace } from "../language";
+
 const readingPace = Object.freeze({
 
-  slow: {
+    [pace.SLOW]: {
 
-    spacing:
-      "generous",
+        rhythm:
+            "reflective",
 
-    contentDensity:
-      "light",
+        spacing:
+            "airy",
 
-    motion:
-      "gentle",
+        density:
+            "light",
 
-    attention:
-      "deep",
+        pause:
+            true,
 
-  },
+        scan:
+            "immersive",
 
+    },
 
-  medium: {
+    [pace.MEDIUM]: {
 
-    spacing:
-      "balanced",
+        rhythm:
+            "balanced",
 
-    contentDensity:
-      "comfortable",
+        spacing:
+            "comfortable",
 
-    motion:
-      "soft",
+        density:
+            "medium",
 
-    attention:
-      "explore",
+        pause:
+            false,
 
-  },
+        scan:
+            "editorial",
 
+    },
 
-  fast: {
+    [pace.FAST]: {
 
-    spacing:
-      "compact",
+        rhythm:
+            "dynamic",
 
-    contentDensity:
-      "focused",
+        spacing:
+            "compact",
 
-    motion:
-      "minimal",
+        density:
+            "high",
 
-    attention:
-      "action",
+        pause:
+            false,
 
-  },
+        scan:
+            "efficient",
 
+    },
 
 });
-
 
 export default readingPace;

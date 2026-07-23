@@ -1,0 +1,11 @@
+Read
+   ↓
+Validate
+   ↓
+Resolve
+   ↓
+Compose
+   ↓
+Register
+   ↓
+Execute

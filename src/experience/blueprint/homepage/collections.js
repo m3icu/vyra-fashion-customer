@@ -1,96 +1,135 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
- * Experience Blueprint
+ * VYRA Experience OS
+ * Homepage Blueprint
  *
  * Scene:
  * Homepage Featured Collections
  *
  * Mission:
- * Transform categories into emotional discovery.
+ * Transform categories into
+ * emotional discovery.
+ *
+ * Every collection tells
+ * a different story.
  *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
+import {
+    emotion,
+    mood,
+    tone,
+    purpose,
+    energy,
+    pace,
+    trust,
+    attention,
+    sensory,
+    profile,
+} from "../../language";
+
 const collections = Object.freeze({
 
-  id: "homepage.collections",
+    id: "homepage.collections",
 
+    mission:
+        "Transform categories into emotional discovery.",
 
-  emotion: "curiosity",
+    profile:
+        profile.WARM_DISCOVERY,
 
+    language: {
 
-  purpose:
-    "Invite visitors to explore different fashion moments.",
+        emotion:
+            emotion.CURIOSITY,
 
+        mood:
+            mood.GOLDEN_HOUR,
 
-  readingPace:
-    "medium",
+        tone:
+            tone.INSPIRING,
 
+        purpose:
+            purpose.EXPLORE,
 
-  narrative: {
+        energy:
+            energy.MEDIUM,
 
-    role:
-      "exploration",
+        pace:
+            pace.COMFORTABLE,
 
-    message:
-      "Every collection represents a different moment in life.",
+        trust:
+            trust.GROWING,
 
-  },
+        attention:
+            attention.EXPLORATION,
 
+        sensory:
+            sensory.AIRY,
 
-  editorial: {
+    },
 
-    weight:
-      "high",
+    narrative: {
 
-    photography:
-      "story-driven",
+        role:
+            "exploration",
 
-    typography:
-      "editorial",
+        message:
+            "Every collection represents a different moment in life.",
 
-    whitespace:
-      "balanced",
+    },
 
-  },
+    editorial: {
 
+        weight:
+            "high",
 
-  interaction: {
+        photography:
+            "story-driven",
 
-    motion:
-      "gentle",
+        typography:
+            "editorial",
 
-    exploration:
-      "discover",
+        whitespace:
+            "balanced",
 
-  },
+    },
 
+    interaction: {
 
-  curation: {
+        primaryAction:
+            "explore-collection",
 
-    style:
-      "intentional",
+        browsingBehavior:
+            "curiosity-led",
 
-    quantity:
-      "limited",
+    },
 
-  },
+    curation: {
 
+        style:
+            "intentional",
 
-  commerce: {
+        quantity:
+            "limited",
 
-    priority:
-      "secondary",
+        organization:
+            "story-first",
 
-    action:
-      "explore-collection",
+    },
 
-  },
+    commerce: {
 
+        priority:
+            "secondary",
+
+        objective:
+            "Encourage exploration before product evaluation.",
+
+    },
 
 });
-
 
 export default collections;

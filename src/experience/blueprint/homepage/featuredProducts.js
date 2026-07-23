@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------
- * VYRA Fashion
- * Experience Blueprint
+ * VYRA Experience OS
+ * Homepage Blueprint
  *
  * Scene:
  * Homepage Featured Products
@@ -10,114 +10,142 @@
  * Transform products into
  * confident choices.
  *
+ * Carefully curated products should
+ * help visitors imagine meaningful
+ * moments before making decisions.
+ *
  * Build with Heart.
  * --------------------------------------------------------
  */
 
+import {
+    emotion,
+    mood,
+    tone,
+    purpose,
+    energy,
+    pace,
+    trust,
+    attention,
+    sensory,
+    profile,
+} from "../../language";
+
 const featuredProducts = Object.freeze({
 
-  id:
-    "homepage.featuredProducts",
+    id: "homepage.featuredProducts",
 
+    mission:
+        "Transform products into confident choices.",
 
-  emotion:
-    "confidence",
+    profile:
+        profile.QUIET_CONFIDENCE,
 
+    language: {
 
-  purpose:
-    "Help visitors imagine themselves living with the product.",
+        emotion:
+            emotion.CONFIDENCE,
 
+        mood:
+            mood.QUIET_LUXURY,
 
-  readingPace:
-    "medium",
+        tone:
+            tone.CLEAR,
 
+        purpose:
+            purpose.DECIDE,
 
-  narrative: {
+        energy:
+            energy.MEDIUM,
 
-    role:
-      "curated-selection",
+        pace:
+            pace.STEADY,
 
+        trust:
+            trust.ESTABLISHED,
 
-    structure: [
+        attention:
+            attention.DECISION,
 
-      "mood",
+        sensory:
+            sensory.REFINED,
 
-      "story",
+    },
 
-      "product",
+    narrative: {
 
-      "choice",
+        role:
+            "curated-selection",
 
-    ],
+        structure: [
 
+            "mood",
 
-    message:
-      "These pieces were thoughtfully chosen for meaningful moments.",
+            "story",
 
-  },
+            "product",
 
+            "choice",
 
-  editorial: {
+        ],
 
-    weight:
-      "high",
+        message:
+            "These pieces were thoughtfully chosen for meaningful moments.",
 
+    },
 
-    photography:
-      "product-with-context",
+    editorial: {
 
+        weight:
+            "high",
 
-    typography:
-      "editorial",
+        photography:
+            "product-with-context",
 
+        typography:
+            "editorial",
 
-    whitespace:
-      "airy",
+        whitespace:
+            "airy",
 
-  },
+    },
 
+    interaction: {
 
-  interaction: {
+        primaryAction:
+            "discover-piece",
 
-    motion:
-      "calm-hover",
+        browsingBehavior:
+            "compare-and-reflect",
 
+    },
 
-    discovery:
-      "explore-details",
+    curation: {
 
-  },
+        enabled:
+            true,
 
+        style:
+            "editor-choice",
 
-  curation: {
+        quantity:
+            "limited",
 
-    enabled:
-      true,
+        organization:
+            "meaning-before-popularity",
 
+    },
 
-    style:
-      "editor-choice",
+    commerce: {
 
+        priority:
+            "supporting",
 
-    quantity:
-      "limited",
+        objective:
+            "Increase purchase confidence through thoughtful curation.",
 
-  },
-
-
-  commerce: {
-
-    priority:
-      "supporting",
-
-
-    action:
-      "discover-piece",
-
-  },
-
+    },
 
 });
-
 
 export default featuredProducts;

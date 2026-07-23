@@ -1,0 +1,19 @@
+const mood = Object.freeze({
+
+    SOFT_MORNING: "SOFT_MORNING",
+
+    QUIET_LUXURY: "QUIET_LUXURY",
+
+    WARM_ATELIER: "WARM_ATELIER",
+
+    EDITORIAL_CALM: "EDITORIAL_CALM",
+
+    GOLDEN_HOUR: "GOLDEN_HOUR",
+
+    COZY_WEEKEND: "COZY_WEEKEND",
+
+    MINIMAL_FOCUS: "MINIMAL_FOCUS"
+
+});
+
+export default mood;
